@@ -1,10 +1,12 @@
 import { View, Text } from 'react native';
 
+import styles from './styles';
+
 export default function exemplo1() {
     return(
-        <View>
-            <Text>exemplo 1</Text>
-            <Text>Introdução React Native com Expo</Text>
+        <View style={styles.container}>
+            <Text style={styles.titulo}>exemplo 1</Text>
+            <Text style ={styles.text}>Introdução React Native com Expo</Text>
         </View>
     )
 }
