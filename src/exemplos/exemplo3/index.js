@@ -1,15 +1,16 @@
+import {useState} from 'react'
 import { View, Text, Button, TouchableOpacity} from 'react-native';
 
 import styles from './styles';
 
 export default function Exemplo3() {
 
-    let numero = 10;
+    const [numero, setNumero] = useState(10);
 
     function handleIncrementar(){
-        numero++;
+        setNumero(numero + 1);
         
-    console.log(numero);
+    //console.log(numero);
     }
 
     return(
