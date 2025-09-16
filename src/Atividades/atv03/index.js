@@ -22,13 +22,6 @@ export default function Atv03() {
     <View style={styles.container}>
       <Text style={styles.titulo}>Atividade 3</Text>
 
-      <Button
-        onPress={() => { alert('Alguém tocou no botão!') }}
-        title="Alerta"
-        color='#FF0000'
-        accessibilityLabel="botão de Alerta"
-      />
-
       <View style={styles.container1}>
         <Text style={styles.text}>{numero}</Text>
 
