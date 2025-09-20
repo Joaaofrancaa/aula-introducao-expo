@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#FFFFFF ', // substitua pela cor desejada
     alignItems: 'center',
-    justifyContent: 'space-evenly',
+    // justifyContent: 'space-evenly',
   },
   titulo: {
     fontSize: RFPercentage(5),
@@ -26,6 +26,15 @@ const styles = StyleSheet.create({
     fontsize: RFPercentage(2),
     textAlign: 'center',
   },
+
+  botao: {
+    backgroundColor: "#0d47a1",
+    width: '50%',
+    borderRadius: RFPercentage(1),
+    padding: RFPercentage(1),
+    alignItems: 'center',
+    marginTop:RFPercentage(2)
+  }
 }
 );
 

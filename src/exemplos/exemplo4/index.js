@@ -6,8 +6,13 @@ import styles from './styles';
 export default function Exemplo4() {
 
     const[texto, setTexto] = useState('');
-    const[txt2, setTxt2] = useState('Valor Inicial');
+    const[txt2, setTxt2] = useState('');
+    const[mensagem, setMensagem] = useState('');
 
+    function handleExibeMensagem(){
+        setMensagem(txt2);
+        setTxt2('');
+    }
 
     return(
         <View style={styles.container}>
@@ -17,7 +22,7 @@ export default function Exemplo4() {
 
             <TextInput 
                 onChangeText={setTexto}
-                placeholder="texto de fundo"
+                placeholder='texto de fundo'
                 keyboardtype='number-pad'
                 // editable={false}
                 // multiline
@@ -27,18 +32,18 @@ export default function Exemplo4() {
                 style={styles.input}
                 />
 
-                <Text style={styles.txt}>{txt2}</Text>
+                <Text style={styles.txt}>{mensagem}</Text>
                 <TextInput 
                 value={txt2}
                 onChangeText={setTxt2}
-                placeholder="Digite sua mensagem"
+                placeholder='Digite sua Mensagem'
                 keyboardtype='number-pad'
                 style={styles.input}
                 />
 
-                <TouchableOpacity>
-                    style={styles.botao}
-                    onPress={() => {}}
+                <TouchableOpacity style={styles.botao}
+                    onPress={() => {setMensagem(txt2)}}>
+                   
                 
                 <Text style={styles.txtBotao}>Exibir texto</Text>    
                 </TouchableOpacity>
