@@ -1,26 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
+import * as React from 'react';
+import { View, StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
 
-import Exemplo4 from './src/exemplos/exemplo4';
+import Index from './components/Index';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo4 />
-      <StatusBar style="light" />
+      <Index />
     </View>
   );
 }
 
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffffff',
-    // alignItems: 'center',
-    // justifyContent: 'center',
-    
-    padding: 10,
-    
+    justifyContent: 'center',
+    paddingTop: Constants.statusBarHeight,
+    backgroundColor: '#B71C1C',
+    padding: 8,
   },
 });
