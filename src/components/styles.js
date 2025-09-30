@@ -38,6 +38,20 @@ txtEntrada: {
   borderRadius: 10,
 },
 
+button: {
+  backgroundColor: '#E53935',
+  height: 40,
+  justifyContent: 'center',
+  borderRadius: 10,
+  marginTop: 20,
+},
+textButton: {
+  fontSize: 22,
+  color: '#FFCDD2',
+  textAlign: 'center',
+},
+
+
 }
 );
 

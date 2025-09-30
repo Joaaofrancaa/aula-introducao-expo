@@ -1,10 +1,16 @@
 import React, {useState} from 'react';
-import { View, Text, StyleSheet, TextInput } from 'react-native';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
 export default function Index() {
 
     const [textoEscrito, setTextoEscrito] = useState('');
     const [mensagem, setMensagem] = useState('Texto programado');
+
+    function ExibeTexto(){
+      setMensagem(textoEscrito);
+      setTextoEscrito('');
+    }
+    
   return(
     <View style={styles.container} >
       <Text style={styles.paragraph} >
@@ -15,9 +21,22 @@ export default function Index() {
         {mensagem}
         </Text>
 
-    <TextInput style={styles.txtEntrada}
+    <TextInput 
+    style={styles.txtEntrada}
     onChangeText={ (entrada) => setTextoEscrito(entrada)}
+    value={textoEscrito}
      />
+
+     <TouchableOpacity style={styles.button} 
+     onPress={() => {
+      setMensagem(textoEscrito);
+      setTextoEscrito('');
+     }
+     }
+     >
+      <text style={styles.textButton}> Exibir texto</text>
+    </TouchableOpacity>
+
     </View>
   );
 }
