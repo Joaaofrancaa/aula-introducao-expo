@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native';
 
+import styles from './styles';
+
 export default function Index() {
 
     const [textoEscrito, setTextoEscrito] = useState('');
@@ -34,25 +36,12 @@ export default function Index() {
      }
      }
      >
-      <text style={styles.textButton}> Exibir texto</text>
+      <Text style={styles.textButton}> Exibir texto</Text>
     </TouchableOpacity>
 
     </View>
+
+    
+
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    backgroundColor: '#FFCDD2',
-    padding: 8,
-  },
-  paragraph: {
-    margin: 24,
-    fontSize: 26,
-    fontWeight: 'bold',
-    textAlign: 'center',
-    color: '#B71C1C',
-  },
-});

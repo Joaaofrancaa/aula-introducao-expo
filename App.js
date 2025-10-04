@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
-import Index from './components/Index';
+import Index from './src/components/index';
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingTop: Constants.statusBarHeight,
-    backgroundColor: '#B71C1C',
+    backgroundColor: '#ffffffff',
     padding: 8,
   },
 });
