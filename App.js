@@ -2,7 +2,7 @@ import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
 
-import Index from './src/components/index';
+import Index from './src/atividades/calculadora/index';
 
 export default function App() {
   return (
